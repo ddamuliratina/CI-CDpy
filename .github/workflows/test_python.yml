@@ -28,6 +28,7 @@ jobs:
           pytest --maxfail=1 --disable-warnings -q
 
   lint:
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
